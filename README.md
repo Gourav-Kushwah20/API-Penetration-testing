@@ -1,13 +1,5 @@
 # 🚀 API Pentration testing Guide 
 
-<hr style="border: none; height: 4px; background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff, #ff0000); background-size: 400% 100%; animation: rgb-animation 5s linear infinite;">
-<style>
-@keyframes rgb-animation {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
 > A structured learning path to master **API fundamentals, architecture, and security concepts**  
 
 > Designed for developers, cybersecurity students, and pentesters 🔐
