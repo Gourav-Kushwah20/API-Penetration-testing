@@ -389,7 +389,7 @@ APIs support modern security mechanisms:
 
 ---
 
-# <span style="border: 2px solid rgba(147, 246, 17, 0.92); padding: 2px; border-radius: 4px;">⚔️ Differences Between SOAP and REST</span>
+## ::: ⚔️ Differences Between SOAP and REST :::
 
 Understanding the differences between SOAP and REST helps in choosing the right API architecture for your system.
 
