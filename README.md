@@ -1,107 +1,117 @@
-# 🚀 API Pentration testing Guide 
+<!-- Animated Gradient Banner -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff99,100:0066ff&height=200&section=header&text=API%20Pentest&fontSize=45&fontColor=ffffff&animation=fadeIn" />
+</p>
 
-> A structured learning path to master **API fundamentals, architecture, and security concepts**  
-
-> Designed for developers, cybersecurity students, and pentesters 🔐
-
----
-
-## 📚 Learning Modules
-
-### 📘 Module 1 — Application Programming Interface (API)
-📄 File: [`001-Application Programming Interface (API).md`](001-Application%20Programming%20Interface%20(API).md)
-
-Learn the foundation of APIs:
-
-- ✅ What is an API?
-- 🌐 Endpoints
-- 🔁 HTTP Methods
-- 📦 Request & Response Structure
-- 📊 HTTP Status Codes
-- 🔌 API Protocol Types (REST, SOAP, GraphQL)
-- 🌍 Common API Use Cases
-- ⭐ Why APIs are Important
-- 🔐 Authentication Mechanisms
-- ⚔️ API vs Traditional Web Apps
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3000&color=00FFAA&center=true&vCenter=true&width=700&lines=API+Security+%7C+Pentesting+%7C+HTTP+Deep+Dive;REST+%7C+SOAP+%7C+GraphQL+%7C+gRPC;From+Fundamentals+to+Advanced+API+Testing" />
+</p>
 
 ---
 
-### 🧩 Module 2 — Object and Action in API
-📄 File: [`002-Object and Action in API.md`](002-Object%20and%20Action%20in%20API.md)
+# 🔐 API Pentest
 
-Master how APIs are structured:
+> A complete guide to understanding APIs, HTTP fundamentals, and practical API penetration testing methodology.
 
-- 📦 What is an Object?
-- ⚙️ What is an Action?
-- 🔄 REST vs Non-REST Style
-- 🏦 Banking API Examples
-- ☁️ SaaS API Examples
-- ⚖️ Object vs Action Comparison
-- 🔐 Security Testing Perspective
+This repository covers:
 
----
-
-## 🧠 Why This Repository?
-
-Modern systems are:
-
-- 🌐 API-driven
-- 📱 Mobile-first
-- ☁️ Cloud-native
-- 🔄 Microservice-based
-
-Understanding APIs deeply is essential for:
-
-- 👨‍💻 Developers  
-- 🔐 Security Engineers  
-- 🐞 Bug Bounty Hunters  
-- 🛡 Penetration Testers  
+- 📘 API fundamentals  
+- 🧩 Object & Action modeling  
+- 🏗 Types of APIs  
+- 🌐 HTTP protocol deep dive  
+- 🛡 Security considerations for pentesting  
 
 ---
 
-## 🎯 Learning Outcome
+## 📚 Repository Structure
 
-After completing both modules, you will:
-
-- Understand how APIs are structured
-- Identify objects and actions correctly
-- Map endpoints efficiently
-- Think in terms of authorization logic
-- Spot API security risks faster
-- Build a strong foundation for API pentesting
+| File | Description |
+|------|------------|
+| 📘 [001 - Application Programming Interface (API)](001-Application%20Programming%20Interface%20(API).md) | API fundamentals & architecture |
+| 🧩 [002 - Object and Action in API](002-Object%20and%20Action%20in%20API.md) | Resource modeling & HTTP actions |
+| 🏗 [003 - Types of APIs](003-Types%20of%20APIs.md) | REST, SOAP, GraphQL, gRPC |
+| 🌐 [004 - HTTP Protocol](004-HTTP-Protocol.md) | HTTP internals & security notes |
 
 ---
 
-## 🛠 Recommended Next Steps
+## 🚀 What You’ll Learn
 
-After finishing these modules:
+### 🌐 API Fundamentals
+- What is an API?
+- API architecture styles
+- Real-world API use cases
 
-- Study OWASP API Security Top 10
-- Practice on intentionally vulnerable API labs
-- Learn API testing tools (Burp, Postman, ffuf, JWT tools)
-- Build and break your own test APIs
+### 🔄 HTTP Deep Dive
+- Request & Response structure
+- HTTP methods
+- Status codes
+- Security headers
+- Method misconfiguration
 
----
-
-## 📌 Repository Structure
-
-```
-.
-├── 001-Application Programming Interface (API).md
-├── 002-Object and Action in API.md
-└── README.md
-```
-
----
-
-## ⭐ If You Find This Useful
-
-- Star the repository ⭐
-- Fork it 🍴
-- Use it for your cybersecurity portfolio 🔥
+### 🛡 API Security (Pentesting Focus)
+- BOLA / IDOR
+- Broken authentication
+- Rate limiting issues
+- Injection in JSON
+- Misconfigured CORS
+- Missing security headers
 
 ---
 
-> 💡 “APIs are the backbone of modern applications —  
-> understanding them deeply gives you asymmetric advantage in security.”
+## 🧠 API Architecture Overview
 
+![alt text](./images/API-Arcth.png)
+
+---
+
+## 🔥 Supported API Technologies
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,nodejs,react,graphql,docker,kubernetes" />
+</p>
+
+| Style | Best For |
+|-------|----------|
+| 🌐 REST | Web & Mobile APIs |
+| 🧼 SOAP | Enterprise systems |
+| 🧩 GraphQL | Complex frontend apps |
+| ⚡ gRPC | High-performance microservices |
+
+---
+
+## 🛠 Tools Covered (Security Perspective)
+
+- 🐝 Burp Suite  
+- 🔎 OWASP ZAP  
+- 📬 Postman  
+- ⚡ curl  
+- 🎯 ffuf  
+- 🔐 JWT tools  
+
+---
+
+## 🎯 Who Is This For?
+
+- 🧑‍💻 Developers learning APIs  
+- 🔐 Security researchers  
+- 🕵️ Bug bounty hunters  
+- 📚 Students learning web security  
+
+---
+
+## ⭐ Why This Repo?
+
+This is not just theory.
+
+It connects:
+
+- 📖 Fundamentals  
+- 🧠 Architecture  
+- ⚙️ Protocol internals  
+- 🛡 Real-world API attack surface  
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0066ff,100:00ff99&height=120&section=footer"/>
+</p>
