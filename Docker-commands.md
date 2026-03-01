@@ -58,9 +58,7 @@ docker rmi <image_name>
 
 ---
 
-# 📦 Working with Containers
-
-
+## 📦 Working with Containers
 
 #### ▶️ List running containers
 

@@ -123,3 +123,13 @@ If your machine IP is:
   * Token leakage
 
 ---
+
+- ### Any time to use this lab use this commands :
+
+```bash
+cd crAPI-main/deploy/docker
+```
+```bash
+docker-compose pull                                
+LISTEN_IP="0.0.0.0" docker-compose -f docker-compose.yml --compatibility up -d
+```

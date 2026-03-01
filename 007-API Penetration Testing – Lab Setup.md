@@ -219,8 +219,8 @@ Since you're working in a penetration testing setup (Kali, Burp, recon workflow)
 
 ## 🌐 Network Setup
 
-* 🖧 Use **Host-only** or **NAT** networking in VirtualBox / VMware
-* 🚧 Keep labs isolated from production networks
+* Use **Host-only** or **NAT** networking in VirtualBox / VMware
+* Keep labs isolated from production networks
 
 ---
 
