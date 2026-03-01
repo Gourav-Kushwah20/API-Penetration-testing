@@ -53,7 +53,7 @@ Includes both **Web UI + API backend**.
 
 # 2️⃣ vAPI
 
-🔗 [https://github.com/rootusk/vapi](https://github.com/rootusk/vapi)
+🔗 [https://github.com/roottusk/vapi](https://github.com/roottusk/vapi)
 
 A lightweight vulnerable **REST API** for beginners.
 
@@ -71,16 +71,24 @@ A lightweight vulnerable **REST API** for beginners.
 ## 🛠 Setup
 
 ```bash
+cd /opt
+```
+```bash
 git clone https://github.com/rootusk/vapi.git
 ```
 ```bash
 cd vapi
 ```
 ```bash
-docker-compose up
+docker-compose up -d
 ```
-
 🐳 Runs using Docker.
+
+Verify service:
+```bash
+docker ps
+netstat -nltup
+```
 
 ---
 
