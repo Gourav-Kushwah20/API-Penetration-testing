@@ -43,14 +43,12 @@ Look for:
 Search for:
 
 ```
-
 /api/
 /rest/
 fetch(
 axios(
 http.get(
-
-````
+```
 
 JS files often reveal:
 
@@ -70,7 +68,7 @@ Clone:
 
 ```bash
 git clone https://github.com/chrislockard/api_wordlist.git
-````
+```
 
 Wordlists include:
 
@@ -114,7 +112,7 @@ payments
 wallet
 ```
 
-## 📌 Actions
+### 📌 Actions
 
 ```
 login
@@ -126,10 +124,7 @@ download
 reset
 ```
 
-
----
-
-## 📂 Paths
+### 📂 Paths
 
 ```
 internal
@@ -180,7 +175,6 @@ curl -X PUT http://target.com/api/users/1
 
 - Postman  
 
----
 
 ## 4.1 Testing Token Authentication
 
