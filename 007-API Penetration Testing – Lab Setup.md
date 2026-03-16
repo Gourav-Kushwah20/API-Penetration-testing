@@ -15,13 +15,13 @@ These labs cover:
 
 ---
 
-# 🏁 OWASP – crAPI
+## 🏁 OWASP – crAPI
 
 🔗 [https://github.com/OWASP/crAPI](https://github.com/OWASP/crAPI)
 
 **crAPI (Completely Ridiculous API)** is one of the most comprehensive modern API security labs.
 
-## 🎯 Focus Areas
+### 🎯 Focus Areas
 
 * OWASP API Security Top 10
 * BOLA (Broken Object Level Authorization)
@@ -31,9 +31,7 @@ These labs cover:
 * SSRF
 * Rate limiting flaws
 
----
-
-## 🛠 Setup
+### 🛠 Setup
 
 ```bash
 git clone https://github.com/OWASP/crAPI.git
@@ -51,24 +49,20 @@ Includes both **Web UI + API backend**.
 
 ---
 
-# 2️⃣ vAPI
+## 2️⃣ vAPI
 
 🔗 [https://github.com/roottusk/vapi](https://github.com/roottusk/vapi)
 
 A lightweight vulnerable **REST API** for beginners.
 
----
-
-## 🎯 Focus Areas
+### 🎯 Focus Areas
 
 * SQL Injection
 * Authentication bypass
 * IDOR
 * Improper input validation
 
----
-
-## 🛠 Setup
+### 🛠 Setup
 
 ```bash
 cd /opt
@@ -84,23 +78,24 @@ docker-compose up -d
 ```
 🐳 Runs using Docker.
 
-Verify service:
+#### Verify service:
 ```bash
 docker ps
+```
+```bash
 netstat -nltup
 ```
 
 ---
 
-# 3️⃣ VAmPI (Vulnerable API)
+## 3️⃣ VAmPI (Vulnerable API)
 
 🔗 [https://github.com/erev0s/VAmPI](https://github.com/erev0s/VAmPI)
 
 A REST API built in **Flask** with deliberate vulnerabilities.
 
----
 
-## 🎯 Focus Areas
+### 🎯 Focus Areas
 
 * JWT weaknesses
 * BOLA (Broken Object Level Authorization)
@@ -108,9 +103,8 @@ A REST API built in **Flask** with deliberate vulnerabilities.
 * Improper rate limiting
 * Broken access control
 
----
 
-## 🛠 Setup
+### 🛠 Setup
 
 ```bash
 git clone https://github.com/erev0s/VAmPI.git
@@ -119,14 +113,44 @@ git clone https://github.com/erev0s/VAmPI.git
 cd VAmPI
 ```
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 🐳 Runs using Docker.
 
+#### Verify service:
+```bash
+docker ps
+```
+```bash
+netstat -nltup
+```
+
+### 🔗 Service Access Table – VAmPI (Vulnerable API)
+
+| Service | Protocol | Default Port | Access URL | Description |
+|--------|----------|--------------|------------|-------------|
+| VAmPI API | HTTP | 5000 | http://10.106.11.190:5001/ | Main vulnerable API service |
+| Swagger UI | HTTP | 5000 | http://10.106.11.190:5001/ui/ | Interactive API documentation |
+
+### 📌 Notes
+
+- **VAmPI (Vulnerable Adversely Misconfigured Product Interface)** is intentionally vulnerable.
+- It is designed for **API penetration testing practice**.
+- The API documentation can be accessed using **Swagger UI**.
+
+### 🛠️ Common Testing Areas
+
+* 🔐 Broken Authentication
+* 🧾 Sensitive Data Exposure
+* 🧩 Broken Object Level Authorization (BOLA)
+* 📡 Mass Assignment
+* 🔍 Improper Input Validation
+
+> Swagger endpoint provide company `SAS wale` **Software as a service**. 
 ---
 
-# 4️⃣ Damn Vulnerable Bank
+## 4️⃣ Damn Vulnerable Bank
 
 🔗 [https://github.com/rewanthtammana/Damn-Vulnerable-Bank](https://github.com/rewanthtammana/Damn-Vulnerable-Bank)
 
@@ -135,7 +159,7 @@ docker-compose up
 A full **banking simulation** with both frontend and backend components.
 
 
-## 🎯 Focus Areas
+### 🎯 Focus Areas
 
 * Business logic flaws
 * Transaction manipulation
@@ -143,11 +167,10 @@ A full **banking simulation** with both frontend and backend components.
 * Authentication bypass
 * Privilege escalation
 
----
 
-## 🛠 Setup
+### 🛠 Setup
 
-### 🔧 Backend
+#### 🔧 Backend
 
 ```bash
 cd BackendServer
@@ -161,7 +184,7 @@ npm install
 npm start
 ```
 
-### 🎨 Frontend
+#### 🎨 Frontend
 
 ```bash
 cd Frontend
@@ -182,15 +205,13 @@ npm start
 
 ---
 
-# 5️⃣ Damn Vulnerable GraphQL Application
+## 5️⃣ Damn Vulnerable GraphQL Application
 
 🔗 [https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application)
 
 A **GraphQL-based intentionally vulnerable lab**.
 
----
-
-## 🎯 Focus Areas
+### 🎯 Focus Areas
 
 * GraphQL introspection abuse
 * Authorization bypass
@@ -198,9 +219,7 @@ A **GraphQL-based intentionally vulnerable lab**.
 * IDOR in GraphQL
 * Injection attacks
 
----
-
-## 🛠 Setup
+### 🛠 Setup
 
 ```bash id="gql7xp"
 docker run -p 5013:5013 dolevf/dvga
@@ -243,17 +262,5 @@ Since you're working in a penetration testing setup (Kali, Burp, recon workflow)
 4️⃣ **Damn Vulnerable Bank** → Business Logic attacks
 
 5️⃣ **DVGA (Damn Vulnerable GraphQL App)** → GraphQL-specific attacks
-
----
-
-## 🚀 Next Steps
-
-If you'd like, you can:
-
-* 🔟 Map these labs to **OWASP API Security Top 10 (2023)**
-* 📅 Create a structured **30-day API pentesting roadmap**
-* 🕵️ Build a **Burp Suite testing checklist for APIs**
-* 🐳 Create a Docker Compose automation script for all labs
-* 📝 Build a professional reporting template for API findings
 
 ---

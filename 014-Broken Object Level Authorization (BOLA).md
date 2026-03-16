@@ -1,5 +1,7 @@
 # Broken Object Level Authorization (BOLA)
 
+![alt text](./images/BOLA.png)
+
 ## Vulnerability Description
 
 **Broken Object-Level Authorization (BOLA)** occurs when an application fails to properly enforce authorization checks on objects referenced by user-supplied identifiers.  
@@ -13,7 +15,7 @@ As a result, an authenticated user can modify identifiers and access **sensitive
 ---
 
 ## Affected Endpoints
-
+![alt text](./images/Bola-example.png)
 ### 1. Vehicle Location API
 
 ```
@@ -115,7 +117,7 @@ The application returns **order details belonging to another user**.
 
 ---
 
-## 3. Mechanic Reports
+### 3. Mechanic Reports
 
 ### Vulnerable Endpoint
 
@@ -169,7 +171,6 @@ This vulnerability could enable:
 
 **High**
 
----
 
 ## CVSS v3.1 Example
 ```
