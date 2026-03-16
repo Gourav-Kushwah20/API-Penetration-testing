@@ -1,7 +1,5 @@
 # 🚦 Rate Limiting
 
-## 🚦 Rate Limiting
-
 **Rate limiting** is a technique used to control the number of requests a client can send to an API within a specified time window. It helps protect the system from abuse, excessive traffic, and automated attacks such as **brute-force attempts** or **denial-of-service (DoS) attacks**.
 
 By restricting request frequency, rate limiting ensures **API availability, stability, and fair usage among clients**.
@@ -31,7 +29,7 @@ Login endpoints and sensitive operations become safer when **repeated attempts a
 
 Rate limiting is typically implemented based on:
 
-## 1️⃣ Request Threshold
+### 1️⃣ Request Threshold
 
 Maximum number of requests allowed.
 
@@ -40,9 +38,8 @@ Maximum number of requests allowed.
 - **100 requests per minute**
 - **10 requests per second**
 
----
 
-## 2️⃣ Time Window
+### 2️⃣ Time Window
 
 The duration over which requests are counted.
 
@@ -53,9 +50,8 @@ The duration over which requests are counted.
 - Per hour  
 - Per day  
 
----
 
-## 3️⃣ Identification Mechanism
+### 3️⃣ Identification Mechanism
 
 Rate limiting may be applied based on:
 
@@ -65,17 +61,16 @@ Rate limiting may be applied based on:
 - 🎫 **Session Token**
 - 🪪 **JWT Token**
 
----
 
-## 🌐 Example API Endpoint
+#### 🌐 Example API Endpoint
 
 ```
 POST /workshop/api/merchant/contact_mechanic HTTP/1.1
 Host: 192.168.1.28:8888
 ```
----
 
-## 📦 Request Body
+
+### 📦 Request Body
 
 ```json
 {
@@ -131,7 +126,7 @@ Check whether the **API blocks excessive requests** or allows unlimited requests
 
 ---
 
-## 👀 2️⃣ Observe Server Response
+### 👀 2️⃣ Observe Server Response
 
 Indicators of rate limiting include responses such as:
 
@@ -148,7 +143,7 @@ Retry-After
 ```
 ---
 
-## 🔄 3️⃣ Token Rotation Testing
+### 🔄 3️⃣ Token Rotation Testing
 
 Test whether rate limits are applied per:
 
@@ -163,7 +158,7 @@ Weak implementations may allow bypass using:
 
 ---
 
-## ⚙️ 4️⃣ Parameter Abuse Testing
+### ⚙️ 4️⃣ Parameter Abuse Testing
 
 Test parameters such as:
 
@@ -176,7 +171,7 @@ to check if they trigger **backend request loops** or automated internal calls.
 
 ---
 
-## 🚨 Impact
+### 🚨 Impact
 
 If rate limiting is **missing or weak**, attackers may:
 
@@ -188,7 +183,7 @@ If rate limiting is **missing or weak**, attackers may:
 
 ---
 
-## 📉 Potential Consequences
+### 📉 Potential Consequences
 
 This can lead to:
 
@@ -198,9 +193,9 @@ This can lead to:
 
 ---
 
-# 🛡️ Recommended Mitigations
+## 🛡️ Recommended Mitigations
 
-## 1️⃣ Implement Server-Side Rate Limiting
+### 1️⃣ Implement Server-Side Rate Limiting
 
 ### Example limits
 
@@ -211,7 +206,7 @@ Implement rate limiting **on the server side** rather than relying on client beh
 
 ---
 
-## 2️⃣ Enforce Global and Per-User Limits
+### 2️⃣ Enforce Global and Per-User Limits
 
 Rate limits should apply to:
 
@@ -223,7 +218,7 @@ This ensures attackers cannot bypass limits using **multiple accounts or tokens*
 
 ---
 
-## 3️⃣ Ignore Client-Controlled Loop Parameters
+### 3️⃣ Ignore Client-Controlled Loop Parameters
 
 Do not allow client parameters such as:
 
@@ -236,7 +231,7 @@ to control **backend request behavior**, as they can be abused to generate exces
 
 ---
 
-## 4️⃣ Implement Request Throttling
+### 4️⃣ Implement Request Throttling
 
 When a client exceeds the allowed request limit, the server should return a response such as:
 
@@ -254,7 +249,7 @@ This informs the client to **wait 60 seconds before sending another request**.
 
 ---
 
-## 5️⃣ Use API Gateways or WAF
+### 5️⃣ Use API Gateways or WAF
 
 Examples include:
 
@@ -276,4 +271,3 @@ Proper implementation ensures:
 - ⚙️ **System stability**
 - 🔐 **Protection against automated attacks**
 - 🌐 **Reliable API availability**
-```
