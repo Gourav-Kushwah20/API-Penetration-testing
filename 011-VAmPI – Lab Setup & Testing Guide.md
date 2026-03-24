@@ -11,17 +11,21 @@ It is intentionally designed to demonstrate **OWASP API Security Top 10 vulnerab
 
 > You used both options — either one is enough.
 
----
 
 ### 🚀 Option 1 – Run Prebuilt Image
 
 ```bash
-docker run -p 5000:5000 erev0s/vampi:latest
+docker run -d -e vulnerable=1 -e tokentimetolive=3000 -p 5000:5000 erev0s/vampi:latest
 ```
+ Now Check the website:
+
+- http://10.106.11.190:5000/
+- http://10.106.11.190:5000/ui/
+
 
 ---
 
-### 🐳 Option 2 – Clone + Docker Compose
+### 🐳 (Optional) 2 – Clone + Docker Compose
 
 ```bash
 cd /opt

@@ -2,7 +2,7 @@
 
 ## 📘 Basic Docker Information
 
-#### 🔎 Check the installed version of Docker
+#### 🔎 Check the installed version of `Docker`
 
 ```bash
 docker --version
